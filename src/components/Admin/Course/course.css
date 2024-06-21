@@ -1,197 +1,135 @@
 /* course.css */
 
 .coursPage {
-  margin: 20px;
-  font-family: Arial, sans-serif;
-}
-
-.react-tabs {
-  border: none;
-}
-
-.react-tabs__tab-list {
-  border-bottom: 2px solid #ddd;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: space-around;
-  list-style-type: none;
-}
-
-.react-tabs__tab {
-  cursor: pointer;
-  padding: 10px 20px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.react-tabs__tab:hover {
-  background-color: #f0f0f0;
-}
-
-.react-tabs__tab--selected {
-  background-color: #1abc9c;
-  color: white;
-  font-weight: bold;
-}
-
-.react-tabs__tab-panel {
-  padding: 20px;
-  border: 1px solid #ddd;
-  margin-top: 10px;
-  border-radius: 5px;
-}
+    margin: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .react-tabs {
+    border: none;
+  }
+  
+  .react-tabs__tab-list {
+    border-bottom: 2px solid #ddd;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+  
+  .react-tabs__tab {
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .react-tabs__tab:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .react-tabs__tab--selected {
+    background-color: #1abc9c;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .react-tabs__tab-panel {
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  /* course.css */
+/* course.css */
 
 .allCourse {
-  margin: 20px;
-}
+    margin: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th,
+  td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  th.name {
+    font-weight: bold;
+    background-color: #f2f2f2;
+  }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
+  th.actions{
 
-th,
-td {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
+    width: 10%;
+  }
+  
+  .action-button {
+    background-color: transparent;
+    color: #3498db; /* Couleur des icônes */
+    border: none;
+    padding: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .action-button:hover {
+    background-color: transparent;
+  }
+  
+  .action-icon {
+    font-size: 1.2em;
+  }
+  
+  .edit-icon {
+    color: #3498db; /* Couleur pour l'icône d'édition */
+  }
+  
+  .delete-icon {
+    color: #e74c3c; /* Couleur pour l'icône de suppression */
+  }
+  
+  .action-icon:hover {
+    opacity: 0.8;
+  }
 
-th.name {
-  font-weight: bold;
-  background-color: #f2f2f2;
-}
-
-th.actions {
-  width: 10%;
-}
-
-.action-button {
-  background-color: transparent;
-  color: #3498db; /* Couleur des icônes */
-  border: none;
-  padding: 5px;
-  margin-right: 5px;
-  cursor: pointer;
-}
-
-.action-button:hover {
-  background-color: transparent;
-}
-
-.action-icon {
-  font-size: 1.2em;
-}
-
-.edit-icon {
-  color: #3498db; /* Couleur pour l'icône d'édition */
-}
-
-.delete-icon {
-  color: #e74c3c; /* Couleur pour l'icône de suppression */
-}
-
-.action-icon:hover {
-  opacity: 0.8;
-}
-
-.courseHeader {
-  height: 50px;
-}
-
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  right: auto;
-  bottom: auto;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 5px 15px rgba(0,0,0,.5);
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.75);
-}
-
-.closeModalButton {
-  background: #ff5e5e;
-  border: none;
-  color: white;
-  padding: 10px;
-  cursor: pointer;
-  float: right;
-}
-
-/* Styles pour le formulaire de nouveau cours */
-.newCourse {
-  background-color: #ffffff;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-  margin: 40px auto;
-}
-
-.newCourse h2 {
-  margin-bottom: 30px;
-  font-size: 24px;
-  color: #333;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-
-.form-group label {
-  margin-bottom: 8px;
-  font-weight: bold;
-  color: #666;
-}
-
-.form-group input,
-.form-group textarea {
-  padding: 12px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 16px;
-  box-sizing: border-box;
-  transition: border-color 0.3s ease;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-  border-color: #1abc9c;
-  outline: none;
-}
-
-.form-group textarea {
-  resize: vertical;
-  min-height: 100px;
-}
-
-.submit-button {
-  background-color: #1abc9c;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
-  margin-top: 10px;
-}
-
-.submit-button:hover {
-  background-color: #16a085;
-}
+  .courseHeader{
+    height: 50px;
+  }
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.75);
+  }
+  
+  .closeModalButton {
+    background: #ff5e5e;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    float: right;
+  }
+  
