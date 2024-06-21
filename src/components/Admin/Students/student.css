@@ -1,0 +1,98 @@
+.studentPage{
+    margin: 20px;
+    font-family: Arial,sans-serif;
+}
+
+.react-tabs {
+    border: none;
+  }
+  
+  .react-tabs__tab-list {
+    border-bottom: 2px solid #ddd;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+  
+  .react-tabs__tab {
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .react-tabs__tab:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .react-tabs__tab--selected {
+    background-color: #1abc9c;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .react-tabs__tab-panel {
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  /* course.css */
+/* course.css */
+
+.allStudent{
+    margin: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th,
+  td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  th.name {
+    font-weight: bold;
+    background-color: #f2f2f2;
+  }
+
+  th.actions{
+
+    width: 10%;
+  }
+  
+  .action-button {
+    background-color: transparent;
+    color: #3498db; /* Couleur des icônes */
+    border: none;
+    padding: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .action-button:hover {
+    background-color: transparent;
+  }
+  
+  .action-icon {
+    font-size: 1.2em;
+  }
+  
+  .edit-icon {
+    color: #3498db; /* Couleur pour l'icône d'édition */
+  }
+  
+  .delete-icon {
+    color: #e74c3c; /* Couleur pour l'icône de suppression */
+  }
+  
+  .action-icon:hover {
+    opacity: 0.8;
+  }
+  

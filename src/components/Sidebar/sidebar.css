@@ -1,0 +1,86 @@
+/* sidebar.css */
+
+.sidebar {
+    background: rgb(68, 75, 79);
+    grid-area: side;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    color: #ecf0f1;
+    z-index: 10;
+}
+
+.profile {
+    height: 30%;
+    width: 100%;
+    background: #2c3e50; /* Couleur de fond pour la section profil */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-icon {
+    background: #1abc9c; /* Couleur de fond du cercle */
+    border-radius: 50%; /* Crée un cercle */
+    width: 100px; /* Largeur du cercle */
+    height: 100px; /* Hauteur du cercle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.link-ct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.link-ct ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.link-ct ul li {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.link-ct ul li a {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    color: #ecf0f1; /* Couleur du texte du lien */
+    text-decoration: none; /* Supprime le soulignement */
+    background-color: #2c3e50; /* Fond du lien */
+    border-radius: 5px; /* Coins arrondis */
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.link-ct ul li a:hover {
+    background-color: #2980b9; /* Couleur du fond au survol */
+    color: #ffffff; /* Couleur du texte au survol */
+}
+
+.link-ct ul li a.active {
+    font-weight: bold; /* Met le lien actif en gras */
+    background-color: #1abc9c; /* Couleur du fond du lien actif */
+    color: #ffffff; /* Couleur du texte du lien actif */
+}
+.link-ct ul li a.active {
+    font-weight: bold; /* Met le lien actif en gras */
+    background-color: #1abc9c; /* Couleur du fond du lien actif */
+    color: #ffffff; /* Couleur du texte du lien actif */
+}

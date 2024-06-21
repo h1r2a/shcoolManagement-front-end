@@ -1,0 +1,21 @@
+.header{
+    background-color: #1abc9c;
+    /* grid-column: 2 / 3;
+    grid-row: 1 / 2; */
+    grid-area: header;
+    display: flex;
+    justify-content: space-around;
+}
+.logo{
+    padding: 10px;
+    display: flex;
+    align-items:center ;
+}
+.brain{
+    color: white;
+    margin-right: 10px;
+}
+.logo h1{
+    margin-right: 50px;
+}
+

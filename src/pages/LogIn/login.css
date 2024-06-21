@@ -1,0 +1,103 @@
+.login {
+    height: 100vh;
+    background: linear-gradient(135deg, rgb(93, 113, 134), rgb(60, 80, 100));
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 60px 1fr;
+    grid-template-areas:  
+        "header"
+        "form";
+    font-family: 'Outfit', sans-serif;
+}
+
+.header {
+    background: rgba(0, 123, 255, 1);
+    grid-area: header;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px; /* Ajustement du padding pour centrer le contenu */
+}
+
+.header h1 {
+    color: white;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin: 0; /* Suppression des marges par défaut */
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    grid-area: form;
+}
+
+.form {
+    height: 350px;
+    width: 550px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #000;
+}
+
+.form-header {
+    text-align: center; /* Centrage du texte */
+    margin-bottom: 20px; /* Marge inférieure pour espacement */
+}
+
+.form-header h1 {
+    font-size: 1.5em; /* Taille de police légèrement réduite */
+    color: rgba(0, 123, 255, 1); /* Couleur du texte */
+}
+
+.form-content {
+    padding: 10px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.icon {
+    margin-right: 10px;
+    color: rgba(0, 123, 255, 1);
+    font-size: 1.2em;
+}
+
+.form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.form input:focus {
+    border-color: rgba(0, 123, 255, 1);
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background: rgba(0, 123, 255, 1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.form button:hover {
+    background: rgba(0, 90, 190, 1);
+}

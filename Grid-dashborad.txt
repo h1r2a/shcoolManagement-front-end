@@ -1,0 +1,4 @@
+-refa anao integration on a deux choix css grid ou flexbox
+
+-Pour utilsier grid il suffit de creer le grid et ditenfier le nombre de ling et de colonne ensuite 
+palce les element dans le grid
