@@ -32,7 +32,7 @@ const Course = () => {
             <CourseStudent />
           </TabPanel>
           <TabPanel>
-            <NewCourse />
+          <NewCourse /> 
           </TabPanel>
         </Tabs>
       </div>

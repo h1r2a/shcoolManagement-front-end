@@ -3,6 +3,7 @@ import { FaBook, FaUserGraduate, FaPlus } from "react-icons/fa";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import "./student.css";
 import AllStudents from "./AllStudents";
+import StudentCourse from "./StudentCourse";
 const Student = () => {
   return (
     <div className="studentPage">
@@ -24,7 +25,7 @@ const Student = () => {
         <TabPanel>
           <AllStudents/>
         </TabPanel>
-        <TabPanel></TabPanel>
+        <TabPanel><StudentCourse/></TabPanel>
         <TabPanel></TabPanel>
       </Tabs>
     </div>

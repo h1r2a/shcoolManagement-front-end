@@ -3,6 +3,7 @@ import React, { useContext, useEffect } from 'react';
 import { FaEdit, FaTrash } from 'react-icons/fa';
 import CourseService from '../../Services/CourseService';
 import { courseContext } from './coursContext';
+import toastr from 'toastr';
 
 const Allcourse = () => {
   const {courses, setCourses} = useContext(courseContext);
@@ -24,8 +25,15 @@ const Allcourse = () => {
     console.log(`Editing course with ID ${courseId}`);
   };
 
-  const handleDelete = (courseId) => {
-    console.log(`Deleting course with ID ${courseId}`);
+  const handleDelete = async (courseId) => {
+    try {
+      const response =  await CourseService.deleteCourse(courseId);
+      const updatedCourses = courses.filter(course => course.id !== courseId);
+      setCourses(updatedCourses);
+      toastr.success(response.data);
+    } catch (error) {
+      toastr.error(error);
+    }
   };
 
   return (
